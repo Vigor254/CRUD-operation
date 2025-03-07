@@ -51,11 +51,10 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'crud.urls'
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],  # This line ensures that Django knows where to find your templates
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -67,6 +66,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'crud.wsgi.application'
 
